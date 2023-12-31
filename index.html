@@ -7,38 +7,172 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header class="header container">
-        <div class="header__logo">
-            <img src="./images/logo.png" alt="" class="logo">
-            <p class="logo-text">big hat</p>
+<body class="bg-neutral-900">
+    <header class="header bg-primary-400">
+        <div class="wrapper flex header__content">
+            <img class="header__logo" src="./images/logo.png" alt="BigHat Poland logo">
+            <nav class="nav">
+                <ul class="nav__links fs-450 text-neutral-900 fw-regular" role="list">
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#approach">approach</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <ul class="header__links">
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Method</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <main class="main container">
-        <section class="hero">
-            <div class="hero__text">
-                <h1>Digital wonders, user delights</h1>
-                <h2>Bridging the Gap Between Beauty and Purpose!</h2>
+    <main>
+        <section class="hero" id="hero">
+            <h2 class="wrapper fs-primary-heading uppercase">strategy</h2>
+            <hr>
+            <h2 class="wrapper fs-primary-heading uppercase">design</h2>
+            <hr>
+            <h2 class="wrapper fs-primary-heading uppercase">branding</h2>
+            <hr>
+            <h2 class="wrapper fs-primary-heading uppercase">development</h2>
+            <hr>
+        </section>
+        <section class="gergeous-design wrapper flex">
+            <div>
+                <img src="./images/3.png" alt="">
+                <p>Designing Tomorrow, Today</p>
+                <p>Where User Experience Meets
+                    Eco-Friendly Brilliance</p>
             </div>
-            <div class="hero__img">
-                <img src="./images/cameleon.png" alt="Cameleon">
+            <div>
+                <h2>Gorgeous design</h2>
+                <p>is not just about aesthetics but is intertwined with functionality, user satisfaction, and a
+                    commitment to sustainable design principles. It reflects a holistic approach where beauty and
+                    purpose converge in the digital realm.</p>
+            </div>
+        </section>
+        <section class="projects bg-neutral-600" id="projects">
+            <div class="projects__content wrapper grid">
+                <h2 class="projects__title uppercase">projects</h2>
+                <div class="projects__project flex text">
+                    <p>poludniowa fala debki</p>
+                    <p class="tag">Branding</p>
+                    <button>arrow</button>
+                </div>
+                <div class="projects__project flex text">
+                    <p>etykieta piwa</p>
+                    <p class="tag">Graphics</p>
+                    <button>arrow</button>
+                </div>
+                <div class="projects__project flex text">
+                    <p>job burnout</p>
+                    <p class="tag">Web design</p>
+                    <button>arrow</button>
+                </div>
+                <div class="projects__project flex text">
+                    <p>brand development</p>
+                    <p class="tag">Branding</p>
+                    <button>arrow</button>
+                </div>
+                <div class="projects__project flex text">
+                    <p>outdoor game set</p>
+                    <p class="tag">Graphics</p>
+                    <button>arrow</button>
+                </div>
+                <div class="projects__project flex text">
+                    <p>kibe agency</p>
+                    <p class="tag">Web design</p>
+                    <button>arrow</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="business-strategy wrapper flex">
+            <div>
+                <img src="./images/1.png" alt="">
+                <p>Where Design Meets Purpose</p>
+                <p>Crafting Digital Elegance, One Pixel at a Time: Where Design Meets Purpose</p>
+            </div>
+            <div>
+                <h2>Business strategy</h2>
+                <p>goes beyond aesthetics and functionality. We provide a comprehensive approach that leverages design as a strategic tool to drive business success, enhance user satisfaction, and contribute to sustainability goals.</p>
+            </div>
+        </section>
+        <section class="about wrapper grid" id="about">
+            <h1 class="about-title fs-primary-heading uppercase">the future is <span>our horizon</span></h1>
+            <p>We are not just a team of designers and builders; we're storytellers.</p>
+            <button>This is our story</button>
+        </section>
+        <section class="show-off wrapper grid">
+            <div class="flex">
+                <p>Big</p>
+                <p>cheese</p>
+            </div>
+        </section>
+        <section class="awards wrapper" id="awards">
+            <h2 class="uppercase fs-secondary-heading">awards</h2>
+            <div class="award flex">
+                <p>01</p>
+                <p class="uppercase">lodz design festival 2023</p>
+            </div>
+            <div class="award flex">
+                <p>02</p>
+                <p class="uppercase">bydgoszcz design challenge 2022</p>
+            </div>
+            <div class="award flex">
+                <p>03</p>
+                <p class="uppercase">wud silesia 10.5</p>
+            </div>
+            <div class="award flex">
+                <p>04</p>
+                <p class="uppercase">Hackaton 'This is smart' 2021</p>
+            </div>
+        </section>
+        <section class="blog wrapper">
+            <h2 class="fs-secondary-heading uppercase">blog</h2>
+            <div class="blog__content grid">
+                <div class="blog__article">
+                    <img src="./images/1.png" alt="">
+                    <h3 class="article__title">First title</h3>
+                    <p class="article__summary">This is short summary</p>
+                </div>
+                <div class="blog__article">
+                    <img src="./images/2.png" alt="">
+                    <h3 class="article__title">Second title</h3>
+                    <p class="article__summary">This is short summary</p>
+                </div>
+                <div class="blog__article">
+                    <img src="./images/3.png" alt="">
+                    <h3 class="article__title">3rd title</h3>
+                    <p class="article__summary">This is short summary</p>
+                </div>
+                <div class="blog__article">
+                    <img src="./images/4.png" alt="">
+                    <h3 class="article__title">4th title</h3>
+                    <p class="article__summary">This is short summary</p>
+                </div>
+                <div class="blog__article">
+                    <img src="./images/5.png" alt="">
+                    <h3 class="article__title">5th title</h3>
+                    <p class="article__summary">This is short summary</p>
+                </div>
+                <div class="blog__article">
+                    <img src="./images/6.png" alt="">
+                    <h3 class="article__title">6thf title</h3>
+                    <p class="article__summary">This is short summary</p>
+                </div>
             </div>
         </section>
     </main>
-
+    <footer class="footer" id="contact">
+        <div class="wrapper flex">
+            <div><h2>contact us</h2></div>
+            <div><h2>write to us</h2></div>
+            <div><h2>locations</h2></div>
+        </div>
+        <hr>
+        <a href="#" class="wrapper">up arrow</a>
+    </footer>
 </body>
 
 </html>
