@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;900&family=Rubik:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Moul&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -83,9 +80,9 @@
     gap: var(--gap, 1rem);
 }
 
-.flow>*:where(:not(:first-child)) {
+.flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 .wrapper {
@@ -373,7 +370,9 @@
 /* ------------------------ */
 /*  General Styling         */
 /* ------------------------ */
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: var(--fs-body);
@@ -395,7 +394,7 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-/* HEADER  */
+/* HEADER */
 
 .header {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -461,8 +460,11 @@ body {
     padding-block: 5rem;
 }
 
-.separator>div {
+.separator > div {
     border: 3px solid var(--clr-primary-400);
+}
+
+.separator__left {
     padding: 5px;
 }
 
@@ -473,9 +475,21 @@ body {
     border: 3px solid var(--clr-primary-400);
 }
 
+.separator__left div {
+    padding: 2rem;
+}
+
 .separator__right {
-    display: grid;
-    place-items: center;
+    /* padding: 25% 2rem 2rem 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-inline: 2rem;
+}
+
+.separator__right p {
+    text-transform: uppercase;
 }
 
 
@@ -507,8 +521,10 @@ body {
     font-weight: var(--fw-light);
 }
 
-.projects__project:hover {
-    background-color: aqua;
+.projects__project:hover,
+.projects__project:focus-visible {
+    cursor: pointer;
+    background-color: var(--clr-neutral-800)
 }
 
 .projects__project button {
@@ -525,7 +541,8 @@ body {
     font-size: var(--fs-500);
 }
 
-.projects__project button:hover {
+.projects__project button:hover,
+.projects__project button:focus-visible {
     background-color: var(--clr-primary-400);
     color: var(--clr-neutral-900);
     font-weight: var(--fw-bold);
@@ -543,13 +560,13 @@ body {
 }
 
 
-
 /* SHOW-OFF section */
 
 .show-off {
-    min-height: 60svh;
+    display: flex;
     justify-content: center;
     align-items: center;
+    gap: .8rem;
 }
 
 
@@ -559,16 +576,28 @@ body {
     max-width: 80ch;
 }
 
+.approach__details li:hover,
+.approach__details li:focus-visible {
+    cursor: pointer;
+    background-color: var(--clr-secondary-dark-100);
+}
 
-/* WHAT-WE-DO section */
 
-.what-we-do__heading {
+/* SERVICES section */
+
+.services__heading {
     display: flex;
     justify-content: space-between;
 }
 
-.what-we-do__insert {
+.services__insert {
     max-width: 330px;
+}
+
+.services__details li:hover,
+.services__details li:focus-visible {
+    cursor: pointer;
+    background-color: var(--clr-secondary-dark-100);
 }
 
 /* PROCESS section */
@@ -611,7 +640,7 @@ body {
     scroll-snap-align: start;
 }
 
-/* AWARD section */
+/* AWARDS section */
 
 .award {
     padding-block: 1em;
@@ -620,6 +649,12 @@ body {
 
 .award p:first-of-type {
     padding-right: 3em;
+}
+
+.award:hover,
+.award:focus-visible {
+    cursor: pointer;
+    background-color: var(--clr-primary-900);
 }
 
 .awards > p:last-of-type {
@@ -641,12 +676,14 @@ body {
     border-radius: 2rem;
     overflow: hidden;
     background-color: lightgoldenrodyellow;
+    box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .blog__article img {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+    transition: transform .3s ease-in;
 }
 
 .blog__article:nth-of-type(1) {
@@ -671,6 +708,12 @@ body {
 
 .blog__article:nth-of-type(6) {
     grid-area: six;
+}
+
+.blog__article:hover img,
+.blog__article:focus-visible img {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .button {
@@ -702,3 +745,6 @@ body {
     background-color: var(--clr-secondary-dark-100);
     color: var(--clr-secondary-dark-900);
 }
+
+/* FOOTER */
+
