@@ -19,159 +19,335 @@
                 <ul class="nav__links fs-450 text-neutral-900 fw-regular" role="list">
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#approach">approach</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#process">process</a></li>
+                    <li><a href="#story">story</a></li>
                     <li><a href="#blog">blog</a></li>
-                    <li><a href="#about">about</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero" id="hero">
-            <h2 class="wrapper fs-primary-heading uppercase">strategy</h2>
-            <hr>
-            <h2 class="wrapper fs-primary-heading uppercase">design</h2>
-            <hr>
-            <h2 class="wrapper fs-primary-heading uppercase">branding</h2>
-            <hr>
-            <h2 class="wrapper fs-primary-heading uppercase">development</h2>
-            <hr>
-        </section>
-        <section class="gergeous-design wrapper flex">
-            <div>
-                <img src="./images/3.png" alt="">
-                <p>Designing Tomorrow, Today</p>
-                <p>Where User Experience Meets
-                    Eco-Friendly Brilliance</p>
-            </div>
-            <div>
-                <h2>Gorgeous design</h2>
-                <p>is not just about aesthetics but is intertwined with functionality, user satisfaction, and a
-                    commitment to sustainable design principles. It reflects a holistic approach where beauty and
-                    purpose converge in the digital realm.</p>
+        <!-- <section class="hero flow" id="hero" style="--flow-space: 4rem"> -->
+        <!-- HERO -->
+        <section class="bg-secondary-dark-100">
+            <div class="hero spacing-1" id="hero">
+                <h2 class="fs-primary-heading uppercase text-primary-400 border-bottom">strategy</h2>
+                <h2 class="fs-primary-heading uppercase text-tertiary-400 border-bottom">design</h2>
+                <h2 class="fs-primary-heading uppercase text-tertiary-900 border-bottom">branding</h2>
+                <h2 class="fs-primary-heading uppercase text-secondary-light-100 border-bottom">development</h2>
             </div>
         </section>
-        <section class="projects bg-neutral-600" id="projects">
-            <div class="projects__content wrapper grid">
-                <h2 class="projects__title uppercase">projects</h2>
-                <div class="projects__project flex text">
-                    <p>poludniowa fala debki</p>
-                    <p class="tag">Branding</p>
-                    <button>arrow</button>
+        <!-- SEPARATOR -->
+        <section class="bg-secondary-dark-100">
+            <div class="separator | wrapper even-columns">
+                <div class="separator__left">
+                    <img src="./images/3.png" alt="">
+                    <div class="flex">
+                        <p class="text-secondary-light-100 border-bottom">Designing Tomorrow, Today</p>
+                        <p class="text-neutral-900">Where User Experience Meets
+                            Eco-Friendly Brilliance</p>
+                    </div>
                 </div>
-                <div class="projects__project flex text">
-                    <p>etykieta piwa</p>
-                    <p class="tag">Graphics</p>
-                    <button>arrow</button>
+                <div class="separator__right text-secondary-light-100">
+                    <h2>Gorgeous design</h2>
+                    <p>is not just about aesthetics but is intertwined with functionality, user satisfaction, and a
+                        commitment to sustainable design principles. It reflects a holistic approach where beauty and
+                        purpose converge in the digital realm.</p>
                 </div>
-                <div class="projects__project flex text">
-                    <p>job burnout</p>
-                    <p class="tag">Web design</p>
-                    <button>arrow</button>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section class="bg-neutral-900">
+            <div class="projects wrapper grid spacing-1" id="projects">
+                <h2 class="fs-primary-heading uppercase">projects</h2>
+                <div class="projects__project">
+                    <p class="project-name">poludniowa fala debki</p>
+                    <div class="project-tags">
+                        <p class="tag">Web design</p>
+                        <p class="tag">Graphics</p>
+                        <p class="tag">Branding</p>
+                    </div>
+                    <button>↗</button>
                 </div>
-                <div class="projects__project flex text">
-                    <p>brand development</p>
-                    <p class="tag">Branding</p>
-                    <button>arrow</button>
+                <div class="projects__project">
+                    <p class="project-name">etykieta piwa</p>
+                    <div class="project-tags">
+                        <p class="tag">Graphics</p>
+                    </div>
+                    <button>↗</button>
                 </div>
-                <div class="projects__project flex text">
-                    <p>outdoor game set</p>
-                    <p class="tag">Graphics</p>
-                    <button>arrow</button>
+                <div class="projects__project">
+                    <p class="project-name">job burnout</p>
+                    <div class="project-tags">
+                        <p class="tag">Web design</p>
+                    </div>
+                    <button>↗</button>
                 </div>
-                <div class="projects__project flex text">
-                    <p>kibe agency</p>
-                    <p class="tag">Web design</p>
-                    <button>arrow</button>
+                <div class="projects__project">
+                    <p class="project-name">brand development</p>
+                    <div class="project-tags">
+                        <p class="tag">Branding</p>
+                    </div>
+                    <button>↗</button>
+                </div>
+                <div class="projects__project">
+                    <p class="project-name">outdoor game set</p>
+                    <div class="project-tags">
+                        <p class="tag">Graphics</p>
+                    </div>
+                    <button>↗</button>
+                </div>
+                <div class="projects__project">
+                    <p class="project-name">kibe agency</p>
+                    <div class="project-tags">
+                        <p class="tag">Web design</p>
+                    </div>
+                    <button>↗</button>
                 </div>
 
             </div>
         </section>
-        <section class="business-strategy wrapper flex">
-            <div>
-                <img src="./images/1.png" alt="">
-                <p>Where Design Meets Purpose</p>
-                <p>Crafting Digital Elegance, One Pixel at a Time: Where Design Meets Purpose</p>
-            </div>
-            <div>
-                <h2>Business strategy</h2>
-                <p>goes beyond aesthetics and functionality. We provide a comprehensive approach that leverages design as a strategic tool to drive business success, enhance user satisfaction, and contribute to sustainability goals.</p>
+        <!-- STORY -->
+        <section class="bg-secondary-dark-100">
+            <div class="story wrapper grid spacing-1" id="story">
+                <h1 class="story-title fs-primary-heading uppercase">the future is <span>our horizon</span></h1>
+                <p>We are not just a team of designers and builders; we're storytellers.</p>
+                <button class="button">This is our story</button>
+                <button class="button" data-type="inverted">This is our story</button>
             </div>
         </section>
-        <section class="about wrapper grid" id="about">
-            <h1 class="about-title fs-primary-heading uppercase">the future is <span>our horizon</span></h1>
-            <p>We are not just a team of designers and builders; we're storytellers.</p>
-            <button>This is our story</button>
-        </section>
+        <!-- SHOW-OFF -->
         <section class="show-off wrapper grid">
             <div class="flex">
-                <p>Big</p>
-                <p>cheese</p>
+                <p class="fs-800 uppercase text-primary-900">Big</p>
+                <div>
+                    <p>impression</p>
+                    <p>Lebovski</p>
+                    <p>Brother</p>
+                    <p>decision</p>
+                    <p>Apple</p>
+                    <p>-hearted</p>
+                    <p>wig</p>
+                    <p>league</p>
+                    <p>hat</p>
+                    <p>lie</p>
+                    <p>cheese</p>
+                    <p>growth</p>
+                    <p>fish in a small pond</p>
+                    <p>league player</p>
+                    <p>shot</p>
+                    <p>break</p>
+                    <p>thing</p>
+                    <p>picture</p>
+                    <p>ask</p>
+                    <p>time</p>
+                </div>
             </div>
         </section>
-        <section class="awards wrapper" id="awards">
-            <h2 class="uppercase fs-secondary-heading">awards</h2>
-            <div class="award flex">
-                <p>01</p>
-                <p class="uppercase">lodz design festival 2023</p>
-            </div>
-            <div class="award flex">
-                <p>02</p>
-                <p class="uppercase">bydgoszcz design challenge 2022</p>
-            </div>
-            <div class="award flex">
-                <p>03</p>
-                <p class="uppercase">wud silesia 10.5</p>
-            </div>
-            <div class="award flex">
-                <p>04</p>
-                <p class="uppercase">Hackaton 'This is smart' 2021</p>
-            </div>
-        </section>
-        <section class="blog wrapper">
-            <h2 class="fs-secondary-heading uppercase">blog</h2>
-            <div class="blog__content grid">
-                <div class="blog__article">
+        <!-- SEPARATOR -->
+        <section class="bg-secondary-dark-100">
+            <div class="separator | wrapper even-columns">
+                <div class="separator__left">
                     <img src="./images/1.png" alt="">
-                    <h3 class="article__title">First title</h3>
-                    <p class="article__summary">This is short summary</p>
+                    <div class="flex">
+                        <p class="text-secondary-light-100 border-bottom">Where Design Meets Purpose</p>
+                        <p class="text-neutral-900">Crafting Digital Elegance, One Pixel at a Time: Where Design Meets
+                            Purpose</p>
+                    </div>
                 </div>
-                <div class="blog__article">
-                    <img src="./images/2.png" alt="">
-                    <h3 class="article__title">Second title</h3>
-                    <p class="article__summary">This is short summary</p>
+                <div class="separator__right text-secondary-light-100">
+                    <h2>Business strategy</h2>
+                    <p>goes beyond aesthetics and functionality. We provide a comprehensive approach that leverages
+                        design
+                        as a strategic tool to drive business success, enhance user satisfaction, and contribute to
+                        sustainability goals.</p>
                 </div>
-                <div class="blog__article">
-                    <img src="./images/3.png" alt="">
-                    <h3 class="article__title">3rd title</h3>
-                    <p class="article__summary">This is short summary</p>
+            </div>
+        </section>
+        <!-- APPROACH -->
+        <section class="bg-primary-400">
+            <div class="approach wrapper text-primary-900 spacing-1" id="approach">
+                <h2 class="uppercase fs-primary-heading">approach</h2>
+                <div class="approach__intro flow text-neutral-100">
+                    <p>Our approach is a blend of art and science, where we balance creative design with data-driven
+                        decision making. We believe in creating experiences that are not only visually stunning but also
+                        intuitive, efficient, and enjoyable for the end user.</p>
+                    <p>Our approach is centered around a deep understanding of user needs and behaviors, combined with
+                        cutting-edge design principles and technology insights.</p>
                 </div>
-                <div class="blog__article">
-                    <img src="./images/4.png" alt="">
-                    <h3 class="article__title">4th title</h3>
-                    <p class="article__summary">This is short summary</p>
+                <div class="approach__details">
+                    <ul role="list" class="fs-700 uppercase">
+                        <li class="border-bottom spacing-3">Research and Understanding</li>
+                        <li class="border-bottom spacing-3">Empathy and User Personas</li>
+                        <li class="border-bottom spacing-3">Information Architecture and User Flow</li>
+                        <li class="border-bottom spacing-3">Design System and Atomic Design Principles</li>
+                        <li class="border-bottom spacing-3">Iterative Prototyping and User Testing</li>
+                        <li class="border-bottom spacing-3">Visual Design and AccessibilitY</li>
+                        <li class="border-bottom spacing-3">Responsive and Cross-Platform Design</li>
+                        <li class="border-bottom spacing-3">Technology and Performance</li>
+                    </ul>
                 </div>
-                <div class="blog__article">
-                    <img src="./images/5.png" alt="">
-                    <h3 class="article__title">5th title</h3>
-                    <p class="article__summary">This is short summary</p>
-                </div>
-                <div class="blog__article">
+            </div>
+        </section>
+        <!-- SEPARATOR -->
+        <section class="bg-secondary-dark-100">
+            <div class="separator | wrapper even-columns">
+                <div class="separator__left">
                     <img src="./images/6.png" alt="">
-                    <h3 class="article__title">6thf title</h3>
-                    <p class="article__summary">This is short summary</p>
+                    <div class="flex">
+                        <p class="text-secondary-light-100 border-bottom">UX/UI Wizards</p>
+                        <p class="text-neutral-900">Where Design Dreams and Sustainability Schemes Unite</p>
+                    </div>
                 </div>
+                <div class="separator__right text-secondary-light-100">
+                    <h2>Digital solution</h2>
+                    <p>is holistic and purposeful. Goes beyond technical implementation. We address the Client's
+                        objectives, enhance user experiences, and contribute to responsible design within the digital
+                        realm.</p>
+                </div>
+            </div>
+        </section>
+        <!-- WHAT-WE-DO -->
+        <section class="bg-tertiary-400">
+            <div class="what-we-do wrapper spacing-1" id="what-we-do">
+                <div class="what-we-do__heading">
+                    <h2 class="what-we-do__title uppercase fs-primary-heading">what we do</h2>
+                    <div class="what-we-do__insert grid">
+                        <p class="text-secondary-light-100">Our goal is to provide a bold design
+                            strategy that covers all aspects of your
+                            business, ensuring a consistent image.</p>
+                        <button class="button">View All</button>
+                    </div>
+                </div>
+                <div class="approach__details">
+                    <ul role="list" class="fs-700 uppercase">
+                        <li class="border-bottom spacing-3">Web /APP design</li>
+                        <li class="border-bottom spacing-3">GRAPHICS</li>
+                        <li class="border-bottom spacing-3">Branding</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- PROCESS -->
+        <section class="bg-neutral-800">
+            <div class="process spacing-1" id="process">
+                <h2 class="wrapper uppercase fs-primary-heading text-primary-400">process</h2>
+                <div class="wrapper even-columns spacing-1">
+                    <div></div>
+                    <p class="fs-600 text-neutral-100">Our design process is a blend of creativity, innovation, and
+                        responsibility. We aim to create
+                        products that are not only delightful and functional for users but also contribute positively to
+                        the planet. This approach ensures that we deliver sustainable, user-friendly, and impactful
+                        design solutions.</p>
+                </div>
+                <div class="process__cards snaps-inline">
+                    <div class="process__card">
+                        <img src="./images/7.png" alt="">
+                        <p class="text-neutral-900">User-Centric & Planet-Centric Integration</p>
+                    </div>
+                    <div class="process__card">
+                        <img src="./images/12.png" alt="">
+                        <p class="text-neutral-900">Deep understanding of the vision and objectives</p>
+                    </div>
+                    <div class="process__card">
+                        <img src="./images/11.png" alt="">
+                        <p class="text-neutral-900">User Research & Empathy</p>
+                    </div>
+                    <div class="process__card">
+                        <img src="./images/8.png" alt="">
+                        <p class="text-neutral-900">Sustainable Practices</p>
+                    </div>
+                    <div class="process__card">
+                        <img src="./images/10.png" alt="">
+                        <p class="text-neutral-900">Iterative Design & Agile Development</p>
+                    </div>
+                    <div class="process__card">
+                        <img src="./images/9.png" alt="">
+                        <p class="text-neutral-900">Collaborative Effort</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- AWARDS -->
+        <section class="bg-secondary-dark-100">
+            <p class="spacing-1 border-bottom text-primary-400"></p>
+            <div class="awards wrapper spacing-1" id="awards">
+                <h2 class="uppercase fs-primary-heading border-bottom spacing-1">awards</h2>
+                <div class="award flex fs-700">
+                    <p>01</p>
+                    <p class="uppercase fs-700">lodz design festival 2023</p>
+                </div>
+                <div class="award flex fs-700">
+                    <p>02</p>
+                    <p class="uppercase">bydgoszcz design challenge 2022</p>
+                </div>
+                <div class="award flex fs-700">
+                    <p>03</p>
+                    <p class="uppercase">wud silesia 10.5</p>
+                </div>
+                <div class="award flex fs-700">
+                    <p>04</p>
+                    <p class="uppercase">Hackaton 'This is smart' 2021</p>
+                </div>
+            </div>
+            <p class="spacing-2 border-top text-primary-400"></p>
+        </section>
+        <!-- BLOG -->
+        <section class="bg-secondary-dark-900">
+            <div class="blog wrapper spacing-1" id="blog">
+                <h2 class="fs-primary-heading uppercase text-secondary-light-900">blog</h2>
+                <div class="blog__content grid spacing-1">
+                    <div class="blog__article">
+                        <img src="./images/1.png" alt="">
+                        <h3 class="article__title">First title</h3>
+                        <p class="article__summary">This is short summary</p>
+                    </div>
+                    <div class="blog__article">
+                        <img src="./images/2.png" alt="">
+                        <h3 class="article__title">Second title</h3>
+                        <p class="article__summary">This is short summary</p>
+                    </div>
+                    <div class="blog__article">
+                        <img src="./images/3.png" alt="">
+                        <h3 class="article__title">3rd title</h3>
+                        <p class="article__summary">This is short summary</p>
+                    </div>
+                    <div class="blog__article">
+                        <img src="./images/4.png" alt="">
+                        <h3 class="article__title">4th title</h3>
+                        <p class="article__summary">This is short summary</p>
+                    </div>
+                    <div class="blog__article">
+                        <img src="./images/5.png" alt="">
+                        <h3 class="article__title">5th title</h3>
+                        <p class="article__summary">This is short summary</p>
+                    </div>
+                    <div class="blog__article">
+                        <img src="./images/6.png" alt="">
+                        <h3 class="article__title">6thf title</h3>
+                        <p class="article__summary">This is short summary</p>
+                    </div>
+                </div>
+                <button class="button">View All</button>
             </div>
         </section>
     </main>
-    <footer class="footer" id="contact">
-        <div class="wrapper flex">
-            <div><h2>contact us</h2></div>
-            <div><h2>write to us</h2></div>
-            <div><h2>locations</h2></div>
+    <!-- FOOTER -->
+    <footer class="bg-primary-400">
+        <div class="footer wrapper even-columns text-neutral-900 spacing-1" id="contact">
+            <div>
+                <h2 class="uppercase border-bottom">contact us</h2>
+            </div>
+            <div>
+                <h2 class="uppercase border-bottom">write to us</h2>
+            </div>
+            <div>
+                <h2 class="uppercase border-bottom">locations</h2>
+            </div>
         </div>
-        <hr>
-        <a href="#" class="wrapper">up arrow</a>
+        <p class="spacing-2 border-top text-neutral-900"></p>
     </footer>
 </body>
 
