@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
+    --small-gap: 1rem;
     --gap: 2rem;
+    --large-gap: 3rem;
 
     /* colors - dark 100 to light 900 */
     --clr-primary-100: hsl(19, 74%, 28%);
@@ -90,6 +92,84 @@
 .grid {
     display: grid;
     gap: var(--gap, 1rem);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    gap: var(--small-gap);
+    flex-wrap: wrap;
+}
+
+.grid-flow {
+    display: grid;
+    align-content: start;
+    gap: var(--gap);
+}
+
+.grid-flow[data-spacing="large"] {
+    gap: var(--large-gap);
+}
+
+.flexible-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.flexible-grid > * {
+    flex: 1;
+}
+
+.auto-grid {
+    --min-column-size: 22rem;
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+}
+
+.reel {
+    display: grid;
+    gap: var(--gap);
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - (var(--gap) / 2));
+    /* grid-auto-columns: 30%; */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: var(--gap);
+}
+
+.reel > * {
+    scroll-snap-align: start;
+}
+
+.main-with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--gap);
+}
+
+.main-with-sidebar > :first-child {
+    flex-basis: 500px;
+    flex-grow: 9999;
+}
+
+.main-with-sidebar > :last-child {
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 .vertical-align-center {
