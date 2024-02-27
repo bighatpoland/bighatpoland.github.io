@@ -1507,6 +1507,22 @@ body {
     font-size: var(--fs-300);
 }
 
+@media (max-width: 50rem) {
+    .blog__content {
+        grid-template:
+            "one" 200px
+            "two" 200px
+            "three" 200px
+            "four" 200px
+            "five" 200px
+            "six" 200px
+        ;
+    }
+    .article__tags {
+        display: none;
+    }
+}
+
 .button {
     margin-inline: auto;
     cursor: pointer;
