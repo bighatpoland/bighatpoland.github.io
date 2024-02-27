@@ -14,9 +14,9 @@
 <body class="bg-greyscale-900">
     <header class="header | bg-primary-200">
         <div class="header__content | wrapper flex">
-            <div class="header__logo">
+            <div class="header__logo flex">
                 <img class="logo" src="./images/logo.png" alt="BigHat Poland logo">
-                <p class="logo-text">Big Hat</p>
+                <p class="logo-text fs-550">Big Hat</p>
             </div>
             <nav class="nav">
                 <ul class="nav__links | fs-425 text-greyscale-000 fw-regular" role="list">
@@ -27,6 +27,22 @@
                     <li><a href="#awards">awards</a></li>
                     <li><a href="#blog">blog</a></li>
                     <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <nav class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links | fs-425 text-greyscale-000 fw-regular" role="list">
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#story" onclick="toggleMenu()">our story</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">services</a></li>
+                    <li><a href="#process" onclick="toggleMenu()">process</a></li>
+                    <li><a href="#awards" onclick="toggleMenu()">awards</a></li>
+                    <li><a href="#blog" onclick="toggleMenu()">blog</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,7 +77,7 @@
                     <div class="about__left">
                         <img src="./assets/home/hero_we_are_2.png" alt="Konstancja Patrycja Karolina">
                     </div>
-                    <div class="about__right text-secondary-light-100 fs-450 spacing-1 text-greyscale-100 flow">
+                    <div class="about__right text-secondary-light-100 fs-450 text-greyscale-100 flow">
                         <h2 class="fs-600">We are design agency</h2>
                         <p>Designing Tomorrow, Today.</p>
                         <p>Our boutique agency excels in blending business strategy, standout branding, and
@@ -74,7 +90,7 @@
             </div>
         </section>
         <!-- PROJECTS -->
-        <section class="bg-greyscale-100">
+        <section class="bg-greyscale-200">
             <div class="projects | wrapper spacing-1 text-greyscale-950" id="projects">
                 <h2 class="fs-primary-heading uppercase fw-bold">projects</h2>
                 <div class="projects__project">
@@ -105,7 +121,7 @@
                 <div class="projects__project">
                     <div class="project-title">
                         <p class="project-type | uppercase fs-300">WEBSITE</p>
-                        <p class="project-name">Real estate investment platform</p>
+                        <p class="project-name">Estate investment platform</p>
                     </div>
                     <div class="project-tags">
                         <p class="tag">Web design</p>
@@ -165,9 +181,7 @@
                 </div>
                 <div class="story__content bg-greyscale-100">
                     <p class="fs-700 fw-bold uppercase">is our horizon</p>
-                    <p class="slogan | fs-500 ff-secondary text-secondary-900">We are BEYOND a team of designers — we
-                        are a
-                        storytellers.</p>
+                    <p class="slogan | fs-500 ff-secondary text-secondary-900">We are BEYOND a team of designers — we are a storytellers.</p>
                     <button class="button">This is our story</button>
                     <p class="services__insert | text-secondary-light-100 fs-500"> In 2018, a spark of creativity ignited as Konstancja, Karolina and Patrycja set out on a mission beyond 
                         design - to become storytellers shaping the future. This shared passion led to the birth of Big Hat Poland, 
@@ -176,9 +190,8 @@
                         gathers twice a week for immersive sessions, where they seamlessly blend their diverse skills in speculative 
                         design, logotype creation, website development, and hackathons. United by a shared commitment to pushing 
                         boundaries, they not only craft visually stunning designs but curate experiences that resonate beyond 
-                        the present – because at Big Hat, the future is their ever-expanding canvas.
+                        the present - because at Big Hat, the future is their ever-expanding canvas.
                     </p>
-                   
             </div>
         </section>
         <!-- SERVICES -->
@@ -478,7 +491,7 @@
             <div class="footer__content | wrapper text-greyscale-100">
                 <div class="fs-450 spacing-2">
                     <h2 class="uppercase text-accent-orange-100 fs-900 fw-bold">contact us</h2>
-                    <div class="flex">
+                    <div class="cluster fs-550">
                         <p>bighatpoland@gmail.com</p>
                         <p>+48 XXX XXX XXX</p>
                     </div>
@@ -510,6 +523,7 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
