@@ -65,10 +65,10 @@
     --fs-300: 0.75rem;
     --fs-400: 1rem;
     --fs-425: clamp(1rem, 3vw, 1.25rem);
-    --fs-450: clamp(1rem, 10vw, 1.75rem);
+    --fs-450: clamp(1rem, 1rem + 0.9vw, 1.75rem);
     --fs-500: clamp(1rem, 1rem + 1.2vw, 2rem);
     --fs-550: clamp(1rem, 1rem + 0.9vw, 2.5rem);
-    --fs-600: clamp(1rem, 3vw, 3rem);
+    --fs-600: clamp(1rem, 1rem + 2vw, 3rem);
     --fs-700: clamp(1.25rem, 1.25rem + 3vw, 5rem);
     --fs-800: clamp(1.5rem, 10vw, 6.875rem);
     --fs-850: clamp(1.75rem, 1.75rem + 4vw, 7.5rem);
@@ -1182,7 +1182,9 @@ body {
 }
 
 .accordion__card {
-    padding: var(--large-gap);
+    --_card-padding: clamp(1rem, 1rem + 10vw, var(--large-gap));
+
+    padding: var(--_card-padding);
     background-color: var(--clr-greyscale-100);
     color: var(--clr-greyscale-500);
     border-radius: 0.25rem;
@@ -1205,7 +1207,6 @@ body {
 }
 
 .accordion__content {
-    padding-top: var(--gap);
     display: grid;
     gap: var(--small-gap);
     color: var(--clr-greyscale-800);
