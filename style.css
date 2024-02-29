@@ -66,12 +66,12 @@
     --fs-400: 1rem;
     --fs-425: clamp(1rem, 3vw, 1.25rem);
     --fs-450: clamp(1rem, 10vw, 1.75rem);
-    --fs-500: clamp(1rem, 10vw, 2rem);
+    --fs-500: clamp(1rem, 1rem + 1.2vw, 2rem);
     --fs-550: clamp(1rem, 1rem + 0.9vw, 2.5rem);
     --fs-600: clamp(1rem, 3vw, 3rem);
     --fs-700: clamp(1.25rem, 1.25rem + 3vw, 5rem);
     --fs-800: clamp(1.5rem, 10vw, 6.875rem);
-    --fs-850: clamp(1.75rem, 10vw, 7.5rem);
+    --fs-850: clamp(1.75rem, 1.75rem + 4vw, 7.5rem);
     --fs-900: clamp(2rem, 10vw, 8.75rem);
 
     --fs-body: var(--fs-400);
@@ -1140,13 +1140,15 @@ body {
     background-image: url("./assets/home/story_background_trans.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 2rem;
 }
 
 .story__content .slogan {
     margin-inline: auto;
     max-width: 30ch;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-inline: 0.3em;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 /* SERVICES section */
