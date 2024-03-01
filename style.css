@@ -62,7 +62,7 @@
     --fw-bold: 700;
 
     /* font sizes */
-    --fs-300: 0.75rem;
+    --fs-300: clamp(0.5rem, 0.5rem + 0.3vw, 0.75rem);
     --fs-400: 1rem;
     --fs-425: clamp(1rem, 3vw, 1.25rem);
     --fs-450: clamp(1rem, 1rem + 0.9vw, 1.75rem);
@@ -713,7 +713,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 72em) {
+@media (max-width: 72rem) {
     .logo-text {
         display: none;
     }
@@ -1006,7 +1006,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 1rem;
+    gap: var(--fs-300);
 }
 
 .tag {
@@ -1031,16 +1031,38 @@ body {
     position: relative;
 }
 
+.project-title {
+    white-space: nowrap;
+}
 
-@media (max-width: 940px) {
+.project-link {
+    margin-left: auto;
+}
 
-    .project-tags,
-    .project-button {
-        display: none;
+@media (max-width: 72rem) {
+
+    .projects__project {
+        display: grid;
+        grid-template:
+            "title link"
+            "tags link" / 9fr 1fr;
+    }
+
+    .project-title {
+        grid-area: title;
+        white-space: normal;
+    }
+
+    .project-tags {
+        grid-area: tags;
+    }
+
+    .project-link {
+        grid-area: link;
     }
 }
 
-.projects__project img {
+.projects__project .hover-img {
     visibility: hidden;
     position: absolute;
     width: min(360px, 40%);
@@ -1052,8 +1074,8 @@ body {
     transition: opacity .5s ease-in-out;
 }
 
-.projects__project:hover img,
-.projects__project:focus-visible img {
+.projects__project:hover .hover-img,
+.projects__project:focus-visible .hover-img {
     visibility: visible;
     top: 80%;
     left: 40%;
@@ -1065,43 +1087,16 @@ body {
     border-top: 3px solid var(--clr-accent-beige-100);
 }
 
-.project-title {
-    white-space: nowrap;
-}
-
 .projects__project:hover,
 .projects__project:focus-visible {
     cursor: pointer;
 }
 
 .projects__project:hover .project-name,
-.projects__project:hover .project-button,
-.projects__project:focus-visible .project-name,
-.projects__project:focus-visible .project-button {
+.projects__project:focus-visible .project-name {
     cursor: pointer;
     color: var(--clr-accent-orange-900)
 }
-
-.projects__project button {
-    margin: 0 auto;
-    height: 2rem;
-    width: 7rem;
-    color: var(--clr-primary-400);
-    background-color: transparent;
-    outline: none;
-    border: 2px solid var(--clr-primary-400);
-    border-radius: 1.125rem;
-    line-height: 1;
-    font-size: var(--fs-500);
-}
-
-.projects__project button:hover,
-.projects__project button:focus-visible {
-    background-color: var(--clr-primary-400);
-    /* color: var(--clr-neutral-900); */
-    font-weight: var(--fw-bold);
-}
-
 
 /* STORY section */
 
