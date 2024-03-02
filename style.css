@@ -1746,7 +1746,7 @@ body {
 }
 
 .overlay_container {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     top: 0;
     right: 0;
@@ -1761,7 +1761,9 @@ body {
 
 @media (min-width: 1280px) {
     .overlay_container {
+        position: absolute;
         width: 60%;
+        height: 100%;
         /* width: calc(calc((var(--grid-width) + var(--grid-gutter) - var(--grid-padding) * 2) / var(--grid-column-count) * 8 - 0rem) + var(--grid-padding)); */
     }
 }
