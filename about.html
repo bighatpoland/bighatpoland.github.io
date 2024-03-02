@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-greyscale-900">
+    <header class="header | bg-primary-200">
+        <div class="header__content | wrapper flex">
+            <div class="header__logo flex">
+                <a href="index.html">
+                    <img class="logo" src="./images/logo.png" alt="BigHat Poland logo">
+                </a>
+                <p class="logo-text fs-550">Big Hat</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav__links | fs-425 text-greyscale-000 fw-regular" role="list">
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#story">our story</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#process">process</a></li>
+                    <li><a href="#awards">awards</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <nav class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links | fs-425 text-greyscale-000 fw-regular" role="list">
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#story" onclick="toggleMenu()">our story</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">services</a></li>
+                    <li><a href="#process" onclick="toggleMenu()">process</a></li>
+                    <li><a href="#awards" onclick="toggleMenu()">awards</a></li>
+                    <li><a href="#blog" onclick="toggleMenu()">blog</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <!-- ABOUT-HERO -->
+        <section class="bg-greyscale-200">
+            <div class="about-hero | spacing-1 wrapper" id="about-hero">
+                <h2 class="fs-800 uppercase fw-bold">about us</h2>
+                <p class="fs-550 uppercase fw-bold">Our boutique agency excels in blending business strategy, standout
+                    branding, and cutting-edge web
+                    development.</p>
+                <img class="about-img spacing-3" src="./assets/about/about.png" alt="">
+                <div class="row">
+                    <p class="text-greyscale-500 fs-450">We prioritize user-centered design, enhanced by AI, to deliver
+                        intuitive and innovative digital experiences.</p>
+                    <div>
+                        <p>Icon</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-story | text-secondary-light-100 fs-500 flow">
+                    <p>In 2018, a spark of creativity ignited as Konstancja, Karolina and Patrycja set out on a mission
+                        beyond design - to become shaping the future. This shared passion led to the birth of <span>Big
+                            Hat
+                            Poland, a creative collective daring to redefine the horizon</span>.
+                    </p>
+                    <p>In 2021, the talented Iwona joined the narrative, adding her unique brushstroke to the collective
+                        canvas. Fueling their boundless creativity, the team gathers twice a week for immersive
+                        sessions, where they seamlessly blend their diverse skills in speculative design, logotype
+                        creation, website development, and hackathons.
+                    </p>
+                    <p>United by a shared commitment to pushing boundaries, they not only craft visually stunning
+                        designs but curate experiences that resonate beyond the present - because <span>at Big Hat, the
+                            future is</span> their <span>ever-expanding canvas.</span>
+                    </p>
+                </div>
+                <img src="./assets/" alt="">
+            </div>
+        </section>
+        <!-- ABOUT-PHOTOS -->
+        <section class="bg-greyscale-100">
+            <div class="about-photos | spacing-1 text-greyscale-950" id="about-photos">
+                <div class="photo__cards snaps-inline text-greyscale-800 fs-400">
+                    <div class="photo__card">
+                        <img src="./assets/about/photo3.png" alt="">
+                    </div>
+                    <div class="photo__card">
+                        <img src="./assets/about/photo1.png" alt="">
+                    </div>
+                    <div class="photo__card">
+                        <img src="./assets/about/photo2.png" alt="">
+                    </div>
+                    <div class="photo__card">
+                        <img src="./assets/about/photo3.png" alt="">
+                    </div>
+                    <div class="photo__card">
+                        <img src="./assets/about/photo1.png" alt="">
+                    </div>
+                </div>
+        </section>
+        <!-- ABOUT-DESIGN -->
+        <section class="bg-greyscale-100">
+            <div class="about-design | wrapper even-columns spacing-1" id="about-design">
+                <div></div>
+                <div>
+                    <h2 class="uppercase fs-800 fw-bold text-accent-orange-900">design</h2>
+                    <p class="uppercase fs-500 fw-bold text-greyscale-500 push-right">with purpose</p>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT-TEAM -->
+        <section class="section-about-team | bg-greyscale-200">
+            <div class="about-team | wrapper spacing-1" id="about-team">
+                <h2 class="fs-800 uppercase fw-bold">team</h2>
+                <p class="team-intro | push-right fs-450 spacing-2"><span>We are a trio of designers, creating Big Hat
+                        Poland.</span> We prioritize user-centered design, enhanced by AI, to deliver intuitive and
+                    innovative digital experiences.</p>
+                <div class="team-members | ">
+                    <div class="team-member"id="member-patrycja">
+                        <div class="team-member__photo">
+                            <img src="./assets/about/patrycja.png" alt="">
+                        </div>
+                        <div class="team-member__name row">
+                            <p class="uppercase fs-550 text-primary-800">Patrycja Mielewczyk</p>
+                            <img src="./assets/home/arrow-up-right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="team-member" id="member-konstancja">
+                        <div class="team-member__photo">
+                            <img src="./assets/about/konstancja.png" alt="">
+                        </div>
+                        <div class="team-member__name row">
+                            <p class="uppercase fs-550 text-primary-800">Konstancja Tanjga</p>
+                            <img src="./assets/home/arrow-up-right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="team-member" id="member-karolina">
+                        <div class="team-member__photo">
+                            <img src="./assets/about/karolina.png" alt="">
+                        </div>
+                        <div class="team-member__name row">
+                            <p class="uppercase fs-550 text-primary-800">Karolina Tracz</p>
+                            <img src="./assets/home/arrow-up-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay_lightBox" data-open="false">
+                <div class="overlay_container">
+                    <button class="overlay_close" title="Close" onclick="changeDataOpen()">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.7 11.7">
+                                <path d="M0 10.6 10.6 0l1.1 1.1L1.1 11.7 0 10.6z"></path>
+                                <path d="M10.6 11.7 0 1.1 1.1 0l10.6 10.6-1.1 1.1z"></path>
+                            </svg>
+                        </figure>
+                    </button>
+                    <div class="overlay_content even-columns" id="overlay_contnet">
+                        <!-- dynamic content based on team-member id -->
+                    </div>
+                    <div class="overlay-team_navigation text-accent-blue-400">
+                        <a class="overlay-team_previous">
+                            <figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                                    <path d="M.1 7.5h14v2H.1z"></path>
+                                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                                </svg></figure>
+                        </a>
+                        <a class="overlay-team_next">
+                            <figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                                    <path d="M.1 7.5h14v2H.1z"></path>
+                                    <path d="m8.4 0 8.5 8.5-1.4 1.4L7 1.4 8.4 0z"></path>
+                                    <path d="m7 15.6 8.5-8.5 1.4 1.4L8.4 17 7 15.6z"></path>
+                                </svg></figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-primary-400">
+        <div class="footer overflow-hidden" id="contact">
+            <div class="footer__background"></div>
+            <div class="footer__img"></div>
+            <div class="footer__content | wrapper text-greyscale-100">
+                <div class="spacing-2">
+                    <h2 class="uppercase text-accent-orange-100 fs-900 fw-bold">contact us</h2>
+                    <div class="cluster fs-550">
+                        <p>bighatpoland@gmail.com</p>
+                        <p>+48 XXX XXX XXX</p>
+                    </div>
+                </div>
+                <div class="move-left text-accent-orange-100 border-bottom "></div>
+                <div class="spacing-2">
+                    <h3 class="uppercase text-accent-orange-100 fs-700 fw-bold ">We are located in Poland, but we work
+                        worldwide</h3>
+                    <div class="spacing-3 fs-425 even-columns">
+                        <div class="footer__cities">
+                            <ul role="list">
+                                <li>warsaw</li>
+                                <li>gdańsk</li>
+                                <li>cracow</li>
+                            </ul>
+                        </div>
+                        <div class="footer__contacts">
+                            <ul role="list">
+                                <li>T: +18 (0) 443 456</li>
+                                <li>E: bighatpoland@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="move-right text-accent-orange-100 border-bottom"></div>
+                <div>
+                    <p class="fs-400 spacing-3">All copyrights reserved. Big Hat Poland, 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

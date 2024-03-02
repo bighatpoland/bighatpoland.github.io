@@ -65,7 +65,7 @@
     --fs-300: clamp(0.5rem, 0.5rem + 0.3vw, 0.75rem);
     --fs-400: 1rem;
     --fs-425: clamp(1rem, 3vw, 1.25rem);
-    --fs-450: clamp(1rem, 1rem + 0.9vw, 1.75rem);
+    --fs-450: clamp(1rem, 1rem + 0.3vw, 1.75rem);
     --fs-500: clamp(1rem, 1rem + 1.2vw, 2rem);
     --fs-550: clamp(1rem, 1rem + 0.9vw, 2.5rem);
     --fs-600: clamp(1rem, 1rem + 2vw, 3rem);
@@ -94,13 +94,13 @@
 /* override the default text selection color  */
 ::-moz-selection {
     /* Code for Firefox */
-    color: red;
-    background: var(--clr-primary-400);
+    color: var(--clr-primary-100);
+    background: var(--clr-secondary-400);
 }
 
 ::selection {
-    color: red;
-    background: var(--clr-primary-400);
+    color: var(--clr-primary-100);
+    background: var(--clr-secondary-400);
 }
 
 /* ------------------------ */
@@ -1148,10 +1148,6 @@ body {
 
 /* SERVICES section */
 
-.services__insert {
-    display: none;
-}
-
 .services__background {
     background: linear-gradient(209deg, #173232 31.84%, #4E8A7F 89.39%);
 }
@@ -1363,7 +1359,8 @@ body {
 
 /* PROCESS section */
 
-.process__cards {
+.process__cards,
+.photo__cards {
     --_spacer: 1rem;
 
     display: grid;
@@ -1376,7 +1373,8 @@ body {
     overscroll-behavior-inline: contain;
 }
 
-.process__card {
+.process__card,
+.photo__card {
     min-width: max(28%, 190px);
     background-color: var(--clr-secondary-dark-400);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
@@ -1559,6 +1557,10 @@ body {
     }
 }
 
+.blog button {
+    display: none;
+}
+
 .button {
     margin-inline: auto;
     cursor: pointer;
@@ -1646,3 +1648,241 @@ body {
 .footer {
     display: none;
 } */
+
+/* ABOUT SITE */
+
+.team-intro {
+    max-width: 55ch;
+}
+
+.team-intro span {
+    color: var(--clr-primary-800);
+}
+
+.team-member__name {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-members {
+    cursor: pointer;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--small-gap);
+    flex-wrap: wrap;
+}
+
+.team-member {
+    max-width: max(30%, 250px);
+}
+
+.text-story span {
+    color: var(--clr-primary-200);
+    font-weight: 600;
+}
+
+.about-photos {
+    background: linear-gradient(to bottom, #173232 0%, #4E8A7F 66.66%, #fff 66.66%, #fff 100%);
+}
+
+.photo__cards {
+    --_spacer: 2rem;
+}
+
+.photo__card {
+    margin-block: auto;
+}
+
+.photo__card img {
+    max-height: 25rem;
+    /* aspect-ratio: 3 / 2; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-about-team {
+    position: relative;
+}
+
+.about-img {
+    margin-inline: auto;
+}
+
+.about-design {
+    display: none;
+}
+
+.overlay_lightBox {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.overlay_lightBox[data-open="true"] {
+    pointer-events: all;
+}
+
+.overlay_lightBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252422;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.overlay_lightBox[data-open="true"]::before {
+    opacity: .75;
+    transition-duration: .5s;
+}
+
+.overlay_container {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    /* width: 100%; */
+    height: 100svh;
+    background-color: var(--clr-greyscale-200);
+    color: var(--clr-accent-blue-400);
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+    padding: 2rem;
+}
+
+@media (min-width: 1280px) {
+    .overlay_container {
+        width: 60%;
+        /* width: calc(calc((var(--grid-width) + var(--grid-gutter) - var(--grid-padding) * 2) / var(--grid-column-count) * 8 - 0rem) + var(--grid-padding)); */
+    }
+}
+
+.overlay_lightBox[data-open="true"] .overlay_container {
+    transform: translateX(0);
+    transition-duration: var(--bd-time-transition-500);
+}
+
+.overlay_close {
+    --_gutter: 1rem;
+
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: var(--_gutter);
+    right: var(--_gutter);
+    width: 3rem;
+    height: 3rem;
+    border: .1rem solid;
+    border-radius: 50%;
+    background-color: var(--clr-greyscale-200);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.overlay_close figure {
+    position: absolute;
+    top: calc(50% - .6rem);
+    left: calc(50% - .6rem);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.overlay_lightBox[data-open="true"] .overlay_close {
+    opacity: 1;
+}
+
+@media (min-width: 1280px) {
+    .overlay_close {
+        right: calc(100% + var(--_gutter));
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .overlay_close figure {
+        top: calc(50% - .8rem);
+        left: calc(50% - .8rem);
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.overlay-team_navigation {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    padding: 0 2rem;
+    background: var(--clr-greyscale-200);
+}
+
+.overlay-team_navigation a {
+    position: relative;
+    flex: 0 0 50%;
+    border-top: .1rem solid;
+    cursor: pointer;
+}
+
+.overlay-team_navigation figure {
+    position: absolute;
+    top: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.overlay-team_navigation {
+    display: none;
+}
+
+.overlay-team_previous figure {
+    transform: scaleX(-1);
+}
+
+.overlay-team_next figure {
+    position: absolute;
+    right: 0;
+}
+
+.overlay-team_next:focus-visible figure svg,
+.overlay-team_next:hover figure svg,
+.overlay-team_previous:focus-visible figure svg,
+.overlay-team_previous:hover figure svg {
+  animation:overlay-team_push-arrow .5s ease-in-out forwards
+}
+
+@keyframes overlay-team_push-arrow {
+    0% {
+        transform: none
+    }
+
+    50% {
+        transform: translateX(100%)
+    }
+
+    50.1% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: none
+    }
+}
+
+figure svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: currentcolor;
+}
