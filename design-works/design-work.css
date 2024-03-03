@@ -1,0 +1,46 @@
+.design-work-big-image img {
+    width: 100%;
+    /* max-height: 80svh; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.design-work-bento {
+    display: grid;
+    grid-template:
+        "vertical horiz-1 horiz-1"
+        "vertical horiz-2 horiz-2" / 1fr 1fr 1fr
+    ;
+    gap: 1rem;
+}
+
+.bento-images.vertical {
+    grid-area: vertical;
+}
+
+#horiz-1 {
+    grid-area: horiz-1;
+}
+
+#horiz-2 {
+    grid-area: horiz-2;
+}
+
+.bento-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+@media (max-width: 50rem) {
+    .design-work-bento {
+        --_height: 500px;
+
+        grid-template:
+            "vertical" var(--_height)
+            "horiz-1" var(--_height)
+            "horiz-2" var(--_height)
+        ;
+    }
+}
