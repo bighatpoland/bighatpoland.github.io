@@ -221,11 +221,15 @@
 }
 
 .wrapper {
-    --max-width: 1558px;
-    --padding: 1rem;
+    --_max-width: 1558px;
+    --_padding: 1rem;
 
-    max-width: min(var(--max-width), 100% - (var(--padding) * 2));
+    max-width: min(var(--_max-width), 100% - (var(--_padding) * 2));
     margin-inline: auto;
+}
+
+.no-padding {
+    max-width: min(var(--_max-width), 100%);
 }
 
 .move-left {
