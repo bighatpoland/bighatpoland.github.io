@@ -8,8 +8,8 @@
 .design-work-bento {
     display: grid;
     grid-template:
-        "vertical horiz-1 horiz-1"
-        "vertical horiz-2 horiz-2" / 1fr 1fr 1fr
+        "vertical horiz-1 horiz-1" 400px
+        "vertical horiz-2 horiz-2" 400px / 1fr 1fr 1fr
     ;
     gap: 1rem;
 }
