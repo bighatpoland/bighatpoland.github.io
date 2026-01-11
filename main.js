@@ -15,6 +15,94 @@ function changeDataOpen() {
     }
 };
 
+// Blog functionality
+let blogData = [];
+
+fetch('./blog-data.json')
+    .then(response => response.json())
+    .then(data => {
+        blogData = data;
+        renderBlogArticles();
+        setupBlogInteractions();
+    })
+    .catch(error => console.error('Error loading blog data:', error));
+
+function renderBlogArticles() {
+    const blogContent = document.getElementById('blogContent');
+    blogContent.innerHTML = '';
+    
+    blogData.forEach((article, index) => {
+        const article_el = document.createElement('div');
+        article_el.className = 'blog__article';
+        article_el.setAttribute('data-article', index);
+        
+        const tagsHTML = article.tags.map(tag => `<div>${tag}</div>`).join('');
+        
+        article_el.innerHTML = `
+            <img src="${article.image}" alt="${article.title}">
+            <button class="blog__trigger" data-article="${index}">
+                <div class="article__description">
+                    <h3 class="article__title">${article.title}</h3>
+                    <div class="article__tags flex" role="list">
+                        ${tagsHTML}
+                    </div>
+                </div>
+            </button>
+        `;
+        
+        blogContent.appendChild(article_el);
+    });
+}
+
+function setupBlogInteractions() {
+    const triggers = document.querySelectorAll('.blog__trigger');
+    const modal = document.getElementById('blogModalOverlay');
+    const closeBtn = document.getElementById('blogModalClose');
+    
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const articleIndex = parseInt(trigger.getAttribute('data-article'));
+            openBlogModal(articleIndex);
+        });
+    });
+    
+    closeBtn.addEventListener('click', closeBlogModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeBlogModal();
+        }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeBlogModal();
+        }
+    });
+}
+
+function openBlogModal(index) {
+    const article = blogData[index];
+    const modal = document.getElementById('blogModalOverlay');
+    
+    document.getElementById('modalImage').src = article.image;
+    document.getElementById('modalTitle').textContent = article.title;
+    document.getElementById('modalContent').textContent = article.description;
+    document.getElementById('modalLink').href = article.link;
+    
+    const tagsContainer = document.getElementById('modalTags');
+    tagsContainer.innerHTML = article.tags.map(tag => `<div>${tag}</div>`).join('');
+    
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeBlogModal() {
+    const modal = document.getElementById('blogModalOverlay');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
 let teamMembers = document.querySelectorAll("div.team-member");
 const membersData = {
     "member-patrycja": {
