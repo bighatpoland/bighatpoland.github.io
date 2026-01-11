@@ -16,9 +16,8 @@
         <div class="header__content | wrapper flex">
             <div class="header__logo flex">
                 <a href="index.html">
-                    <img class="logo" src="./images/logo.png" alt="BigHat Poland logo">
+                    <p class="logo-text fs-550">Big Hat</p>
                 </a>
-                <p class="logo-text fs-550">Big Hat</p>
             </div>
             <nav class="nav">
                 <ul class="nav__links | fs-425 text-greyscale-000 fw-regular" role="list">
@@ -428,101 +427,31 @@
                 </a>
             </div>
         </section>
-        <!-- BLOG -->
+                        <!-- BLOG -->
         <section class="bg-greyscale-100">
             <div class="blog grid wrapper spacing-1" id="blog">
                 <h2 class="fs-800 uppercase fw-bold">blog</h2>
-                <div class="blog__content grid spacing-1">
-                    <div class="blog__article">
-                        <img src="./assets/blog/1.png" alt="">
-                        <a href="https://bootcamp.uxdesign.cc/role-of-technology-in-organizations-looking-for-efficiencies-9e14f4d0e8c9" target="_blank">
-                            <div class="article__description">
-                                <h3 class="article__title">Role of technology in organizations. Looking for Efficiencies.
-                                </h3>
-                                <div class="article__tags flex" role="list">
-                                    <div>AUTOMATION</div>
-                                    <div>DIGITAL TRANSFORMATION</div>
-                                    <div>TECHNOLOGY</div>
-                                    <div>AI</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="blog__article">
-                        <img src="./assets/blog/2.png" alt="">
-                        <a href="https://bootcamp.uxdesign.cc/futures-cone-workshop-for-designers-3c075a224f78" target="_blank">
-                            <div class="article__description">
-                                <h3 class="article__title">Futures Cone workshop for designers in Lodz, Poland
-                                </h3>
-                                <div class="article__tags flex" role="list">
-                                    <div>FUTURES THINKING</div>
-                                    <div>FUTURES CONE</div>
-                                    <div>WORKSHOP</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="blog__article">
-                        <img src="./assets/blog/3.png" alt="">
-                        <a href="https://medium.com/@konstancjatanjga/biomimicry-inspiring-innovation-from-natures-designs-49ec01b570ea" target="_blank">
-                            <div class="article__description">
-                                <h3 class="article__title">Biomimicry: Inspiring Innovation from Nature’s Designs
-                                </h3>
-                                <div class="article__tags flex" role="list">
-                                    <div>DESIGN PROCESS</div>
-                                    <div>VALUE-DRIVEN APPROACH</div>
-                                    <div>INNOVATION</div>
-                                    <div>PATTERNS</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="blog__article">
-                        <img src="./assets/blog/4.png" alt="">
-                        <a href="https://bootcamp.uxdesign.cc/youth-tutoring-and-the-richard-szubartowski-method-key-to-teaching-success-e1cdf81d93ef" target="_blank">
-                            <div class="article__description">
-                                <h3 class="article__title">Youth Tutoring and the “Richard Szubartowski Method”: Key to Teaching Success
-                                </h3>
-                                <div class="article__tags flex" role="list">
-                                    <div>TECHSTORIE</div>
-                                    <div>LEARNING</div>
-                                    <div>AI</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="blog__article">
-                        <img src="./assets/blog/5.png" alt="">
-                        <a href="https://medium.com/@konstancjatanjga/navigating-new-horizons-the-2024-social-impact-forecast-eb197005e520" target="_blank">
-                            <div class="article__description">
-                                <h3 class="article__title">Navigating New Horizons: The 2024 Social Impact Forecast
-                                </h3>
-                                <div class="article__tags flex" role="list">
-                                    <div>FUTURES THINKING</div>
-                                    <div>FORECASTING</div>
-                                    <div>FUTURE OF WORK</div>
-                                    <div>FUTURE TECHNOLOGY</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="blog__article">
-                        <img src="./assets/blog/6.png" alt="">
-                        <a href="https://medium.com/@konstancjatanjga/shaping-our-tomorrow-the-eight-pillars-of-regenerative-futures-eaf8df09ac2e" target="_blank">
-
-                            <div class="article__description">
-                                <h3 class="article__title">Shaping Our Tomorrow: The Eight Pillars of Regenerative Futures
-                                </h3>
-                                <div class="article__tags flex" role="list">
-                                    <div>REGENERATION</div>
-                                    <div>SUSTAINABILITY</div>
-                                    <div>CO-EVOLUTION</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="blog__content grid spacing-1" id="blogContent">
+                    <!-- Articles will be populated by JavaScript -->
                 </div>
                 <button class="button">Show more</button>
+            </div>
+            <!-- Blog Modal -->
+            <div class="blog__modal-overlay" id="blogModalOverlay">
+                <div class="blog__modal-content">
+                    <button class="blog__modal-close" id="blogModalClose">&times;</button>
+                    <div class="blog__modal-body">
+                        <div class="blog__modal-image">
+                            <img id="modalImage" src="" alt="">
+                        </div>
+                        <div class="blog__modal-text">
+                            <h2 id="modalTitle"></h2>
+                            <div id="modalTags" class="article__tags flex"></div>
+                            <p id="modalContent"></p>
+                            <a id="modalLink" href="#" target="_blank" class="button">Read Full Article</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

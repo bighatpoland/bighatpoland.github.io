@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "title": "Role of technology in organizations. Looking for Efficiencies.",
+    "image": "./assets/blog/1.png",
+    "tags": ["AUTOMATION", "DIGITAL TRANSFORMATION", "TECHNOLOGY", "AI"],
+    "description": "Explore how organizations can leverage technology to drive efficiency and transformation. In this article, we delve into the strategic integration of automation and digital tools to streamline operations and unlock new growth opportunities.",
+    "link": "https://bootcamp.uxdesign.cc/role-of-technology-in-organizations-looking-for-efficiencies-9e14f4d0e8c9"
+  },
+  {
+    "id": 1,
+    "title": "Futures Cone workshop for designers in Lodz, Poland",
+    "image": "./assets/blog/2.png",
+    "tags": ["FUTURES THINKING", "FUTURES CONE", "WORKSHOP"],
+    "description": "Join us in exploring the Futures Cone methodology through a practical workshop experience. Learn how to navigate possible, plausible, and preferable futures while designing solutions that anticipate tomorrow's challenges.",
+    "link": "https://bootcamp.uxdesign.cc/futures-cone-workshop-for-designers-3c075a224f78"
+  },
+  {
+    "id": 2,
+    "title": "Biomimicry: Inspiring Innovation from Nature's Designs",
+    "image": "./assets/blog/3.png",
+    "tags": ["DESIGN PROCESS", "VALUE-DRIVEN APPROACH", "INNOVATION", "PATTERNS"],
+    "description": "Discover how nature's proven strategies can inspire innovative design solutions. This exploration of biomimicry reveals how observing natural systems can lead to sustainable and elegant answers to human challenges.",
+    "link": "https://medium.com/@konstancjatanjga/biomimicry-inspiring-innovation-from-natures-designs-49ec01b570ea"
+  },
+  {
+    "id": 3,
+    "title": "Youth Tutoring and the \"Richard Szubartowski Method\": Key to Teaching Success",
+    "image": "./assets/blog/4.png",
+    "tags": ["TECHSTORIES", "LEARNING", "AI"],
+    "description": "Explore innovative approaches to education and youth development through the Richard Szubartowski Method. Discover how personalized learning strategies and mentorship create lasting impact on student success.",
+    "link": "https://bootcamp.uxdesign.cc/youth-tutoring-and-the-richard-szubartowski-method-key-to-teaching-success-e1cdf81d93ef"
+  },
+  {
+    "id": 4,
+    "title": "Navigating New Horizons: The 2024 Social Impact Forecast",
+    "image": "./assets/blog/5.png",
+    "tags": ["FUTURES THINKING", "FORECASTING", "FUTURE OF WORK", "FUTURE TECHNOLOGY"],
+    "description": "Prepare for the future with insights into emerging trends and opportunities. This forecast examines the social, technological, and economic shifts that will shape our world in 2024 and beyond.",
+    "link": "https://medium.com/@konstancjatanjga/navigating-new-horizons-the-2024-social-impact-forecast-eb197005e520"
+  },
+  {
+    "id": 5,
+    "title": "Shaping Our Tomorrow: The Eight Pillars of Regenerative Futures",
+    "image": "./assets/blog/6.png",
+    "tags": ["REGENERATION", "SUSTAINABILITY", "CO-EVOLUTION"],
+    "description": "Explore the foundational principles of regenerative design and sustainable futures. Learn how these eight pillars can guide organizations and communities toward creating positive environmental and social impact.",
+    "link": "https://medium.com/@konstancjatanjga/shaping-our-tomorrow-the-eight-pillars-of-regenerative-futures-eaf8df09ac2e"
+  }
+]
